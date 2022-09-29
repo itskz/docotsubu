@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+h1 {
+	color: #00ff80;
+	text-align: center;
+	/* 	width:300px; */
+	/* 	/* 上下　左右 */
+	/* 	margin:0 auto; */
+	/* } */
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	/* 縦並びにする */
+	flex-flow: column;
+}
+
+ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px 0;
+	list-style-type: none;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+li {
+	margin: 5px 0;
+}
+
+li span {
+	color: #008000;
+}
+
+input::placeholder {
+	color: #3f3f3f;
+}
+
+input {
+	padding: 5px 0;
+}
+
+input[type="submit"] {
+	/* 親要素（ul）に対して100% */
+	width: 100%;
+	border: none;
+	/* 境界線の角を丸める */
+	border-radius: 5px;
+	background-color: #80ff80;
+	color: #fff;
+	font-size: 20px;
+}
+
+/* 「:hover」はカーソルが乗っている要素にスタイルを適用する（擬似クラスはコロン1つで書く） */
+input[type="submit"]:hover {
+	/* カーソルを指差しの手にする */
+	cursor: pointer;
+	/* 透明度を0.0（完全に透明）～1.0（完全に不透明）の数値で指定 */
+	opacity: 0.6;
+}
+
+/* モバイル版（レスポンシブ対応） */
+/* 「@media」は「メディアクエリを書きます」という宣言
+   「max-width: 600px」は「0～600pxの範囲の画面サイズ」に対して適用される*/
+@media ( max-width : 600px) {
+	h1{
+		font-size:120%;
+	}
+	ul {
+		/* 縦並びにする */
+		flex-flow: column;
+	}
+	li, input[type="submit"] {
+		font-size: 18px;
+		/* 中央揃え */
+		text-align: center;
+	}
+	li {
+		/* 上下左右 */
+		margin: 0;
+	}
+}
