@@ -4,7 +4,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
 
 h1 {
@@ -27,6 +26,21 @@ h1 {
 	display: flex;
 	/* 縦並びにする */
 	flex-flow: column;
+}
+
+footer {
+	/* 要素を固定 */
+	position: fixed;
+	/* 下から0 */
+	bottom: 0;
+	/* 左右に100% */
+	width: 100%;
+	/* 背景色 */
+	background-color: #0078ba;
+	/* 文字色 */
+	color: #fff;
+	/* 文字を中央揃え */
+	text-align: center;
 }
 
 ul {
@@ -77,8 +91,8 @@ input[type="submit"]:hover {
 /* 「@media」は「メディアクエリを書きます」という宣言
    「max-width: 600px」は「0～600pxの範囲の画面サイズ」に対して適用される*/
 @media ( max-width : 600px) {
-	h1{
-		font-size:120%;
+	h1 {
+		font-size: 120%;
 	}
 	ul {
 		/* 縦並びにする */

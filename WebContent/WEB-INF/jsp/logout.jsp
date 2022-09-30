@@ -17,11 +17,12 @@
 				<li><span>ログアウトしました</span></li>
 			</ul>
 			<ul>
-				<li><span>
-						<a href="/docoTsubuSample/">HOME</a>
-					</span></li>
+				<li><span> <a href="/docoTsubuSample/">HOME</a>
+				</span></li>
 			</ul>
+				<jsp:include page="/footer.jsp" />
 		</div>
 	</div>
+
 </body>
 </html>

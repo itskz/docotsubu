@@ -50,7 +50,9 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 			<%
 			for (int i = 0; i < mutterList.size(); i++) {
 			%>
-			<ul><li><%=mutterList.get(i).getUserName()%>：<%=mutterList.get(i).getText()%></li></ul>
+			<ul>
+				<li><%=mutterList.get(i).getUserName()%>：<%=mutterList.get(i).getText()%></li>
+			</ul>
 			<ul>
 				<li><span><a
 							href="/docoTsubuSample/Main?action=like&index=<%=i%>">よいね</a> :<%=mutterList.get(i).getLike()%>人</span></li>
@@ -63,7 +65,9 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 			<%
 			}
 			%>
+			<jsp:include page="/footer.jsp" />
 		</div>
 	</div>
+
 </body>
 </html>

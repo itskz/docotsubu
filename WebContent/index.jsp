@@ -11,29 +11,32 @@
 </head>
 <body>
 	<div class="wrapper">
-	<div class="container">
-	<h1>どこつぶへようこそ</h1>
+		<div class="container">
+			<h1>どこつぶへようこそ</h1>
 
 
 
-		<form action="/docoTsubuSample/Login" method="post">
-			<ul>
-				<li><span>ユーザー名：</span></li>
-				<li>
-					<input type="text" name="name"
-						pattern="^[0-9a-zA-Z]{4}$" placeholder="半角英数4文字で入力">
-				</li>
-			</ul>
-			<ul>
-				<li><span>パスワード：</span></li>
-				<li>
-					<input type="password" name="pass"
-						pattern="^[0-9a-zA-Z]{4,8}$" placeholder="半角英数4～8文字で入力">
-				</li>
-			</ul>
-			<input type="submit" value="ログイン">
-		</form>
-		</div><!-- container -->
-	</div><!-- wrapper -->
+			<form action="/docoTsubuSample/Login" method="post">
+				<ul>
+					<li><span>ユーザー名：</span></li>
+					<li><input type="text" name="name" pattern="^[0-9a-zA-Z]{4}$"
+							placeholder="半角英数4文字で入力"></li>
+				</ul>
+				<ul>
+					<li><span>パスワード：</span></li>
+					<li><input type="password" name="pass"
+							pattern="^[0-9a-zA-Z]{4,8}$" placeholder="半角英数4～8文字で入力">
+					</li>
+				</ul>
+				<input type="submit" value="ログイン">
+			</form>
+
+			<jsp:include page="/footer.jsp" />
+
+		</div>
+		<!-- container -->
+	</div>
+	<!-- wrapper -->
+
 </body>
 </html>
