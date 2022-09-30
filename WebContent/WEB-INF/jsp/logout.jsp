@@ -20,9 +20,9 @@
 				<li><span> <a href="/docoTsubuSample/">HOME</a>
 				</span></li>
 			</ul>
-				<jsp:include page="/footer.jsp" />
+
 		</div>
 	</div>
-
+<jsp:include page="/footer.jsp" />
 </body>
 </html>

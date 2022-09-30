@@ -65,9 +65,9 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 			<%
 			}
 			%>
-			<jsp:include page="/footer.jsp" />
+
 		</div>
 	</div>
-
+<jsp:include page="/footer.jsp" />
 </body>
 </html>

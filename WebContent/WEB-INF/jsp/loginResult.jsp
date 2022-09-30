@@ -48,9 +48,9 @@ String errorMsg1 = (String) request.getAttribute("errorMsg1");
 			<%
 			}
 			%>
-			<jsp:include page="/footer.jsp" />
+
 		</div>
 	</div>
-
+<jsp:include page="/footer.jsp" />
 </body>
 </html>

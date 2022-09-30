@@ -31,12 +31,12 @@
 				<input type="submit" value="ログイン">
 			</form>
 
-			<jsp:include page="/footer.jsp" />
+
 
 		</div>
 		<!-- container -->
 	</div>
 	<!-- wrapper -->
-
+<jsp:include page="/footer.jsp" />
 </body>
 </html>
